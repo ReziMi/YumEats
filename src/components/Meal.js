@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
 // import { ExpandMore } from '@material-ui/icons';
 import { mealData } from '../data/data'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
 
 const Meal = () => {
     const [foods, setFoods]=useState(mealData)
@@ -35,7 +37,7 @@ const Meal = () => {
                         <p className='bg-orange-700 h-18 w-18 rounded-full -mt-10 text-white py-4 px-2 border-8 font-bold'>{item.price}</p>
                     </div>
                     <div className='pl-2 py-4 -mt-7'>
-                        <FontAwesomeIcon icon="arrow-right"/>
+                        <FontAwesomeIcon icon={faArrowRight} />
                     </div>
                 </div>
             ))
